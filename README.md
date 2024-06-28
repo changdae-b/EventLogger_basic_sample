@@ -6,7 +6,7 @@ TwinCAT 4024.53 build
 # TwinCAT 3 EventLogger
 [TwinCAT 3 EventLogger](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_eventlogger/index.html&id=8504177607767980219)
 
-TwinCAT 3 EventLogger는 로깅을 남기는 기능이며 Message, Alarm 두가지 방식으로 남길 수 있다.
+TwinCAT 3 EventLogger는 로깅을 남기는 기능이며 Message, Alarm 두가지 방식으로 남길 수 있다.  
 TwinCAT 3 XAE 상단의 View - Other Windows - TwinCAT Logged Events에서 로그들을 확인할 수 있다.
 
 ### Messages
