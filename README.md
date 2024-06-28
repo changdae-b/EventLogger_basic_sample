@@ -11,7 +11,7 @@
 - 추가로, Confirmation이 요구될 수 있음 
 	- Wait for confirmation
 	- Confirmed or Reset  
-		-> Confirmation이 Confirm()으로 되면 상태는 Confirmed가 됨
+		-> Confirmation이 Confirm()으로 되면 상태는 Confirmed가 됨  
 		-> Confirmation이 Clear(TRUE)로 되면 상태는 Reset이 됨
 - [FB_TcAlarm](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_eventlogger/5001926923.html&id=)으로 생성
 
