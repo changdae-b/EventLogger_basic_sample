@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.53">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{2F305C05-7FDD-40A9-9D79-D9A8296EF20A}" PersistentType="true">MyEvent_Test</Name>
+			<DisplayName TxtId=""><![CDATA[This is MyEvent_Test Display Text]]></DisplayName>
+			<EventId>
+				<Name Id="1">Message_test</Name>
+				<DisplayName TxtId=""><![CDATA[This is Display Text]]></DisplayName>
+				<Comment TxtId=""><![CDATA[This is Comment]]></Comment>
+				<DescriptionText TxtId=""><![CDATA[네이버]]></DescriptionText>
+				<DescriptionUrl TxtId=""><![CDATA[www.naver.com]]></DescriptionUrl>
+				<Severity>Info</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="2">Alarm_test</Name>
+				<DisplayName TxtId=""><![CDATA[This is Alarm]]></DisplayName>
+				<Comment TxtId=""><![CDATA[This is alarm Comment]]></Comment>
+				<DescriptionText TxtId=""><![CDATA[유튜브]]></DescriptionText>
+				<DescriptionUrl TxtId=""><![CDATA[www.youtube.com]]></DescriptionUrl>
+				<Severity>Error</Severity>
+			</EventId>
+			<Hides>
+				<Hide GUID="{48D913C9-5FD3-4EFF-8B4B-8F42AF872AF3}"/>
+				<Hide GUID="{6007234F-6935-4ADE-83B0-AC8571D87A33}"/>
+				<Hide GUID="{F7784D4B-0854-48F9-A19E-74ADFD914FAE}"/>
+			</Hides>
+		</DataType>
+	</DataTypes>
+	<Project ProjectGUID="{442BD01A-C291-4D13-98A1-824985BF3DCB}" TargetNetId="10.200.128.23.1.1" Target64Bit="true" ShowHideConfigurations="#x6">
+		<System>
+			<Settings MaxCpus="4" NonWinCpus="1">
+				<Cpu CpuId="3"/>
+			</Settings>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project File="Untitled1.xti"/>
+		</Plc>
+	</Project>
+</TcSmProject>

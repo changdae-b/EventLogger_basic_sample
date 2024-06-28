@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{b07ce5f6-d476-4b41-b4b9-48aff580fafa}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	fbTcAlarm : FB_TcAlarm;
+	fbTcMessage : FB_TcMessage;
+	
+	bCreate : BOOL;
+	bSendMessage : BOOL;
+	bRaise : BOOL;
+	bConfirm : BOOL;
+	bClear : BOOL;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(*CreateEx는 동적메모리를 사용하므로 한번만 콜해야함*)
+IF bCreate THEN
+	bCreate := FALSE;
+	fbTcAlarm.CreateEx(TC_Events.MyEvent_Test.Alarm_test,TRUE,0);
+	fbTcMessage.CreateEx(TC_Events.MyEvent_Test.Message_test,0);
+END_IF
+
+(* 메시지 *)
+IF bSendMessage THEN
+	bSendMessage := FALSE;
+	fbTcMessage.Send(0);
+END_IF
+
+(* 알람 띄우기 *)
+IF bRaise THEN
+	bRaise := FALSE;
+	fbTcAlarm.Raise(0);
+END_IF
+
+(* 알람 컨펌 *)
+IF bConfirm THEN
+	bConfirm := FALSE;
+	fbTcAlarm.Confirm(0);
+END_IF
+
+(* 알람 클리어 *)
+IF bClear THEN
+	bClear := FALSE;
+	fbTcAlarm.Clear(0,TRUE);
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
