@@ -23,10 +23,13 @@ TwinCAT 3 XAE 상단의 View - Other Windows - TwinCAT Logged Events에서 로�
 		-> Confirmation이 Confirm()으로 되면 상태는 Confirmed가 됨  
 		-> Confirmation이 Clear(TRUE)로 되면 상태는 Reset이 됨
 - [FB_TcAlarm](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_eventlogger/5001926923.html&id=)으로 생성
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+      
 ![image](https://github.com/changdae-b/EventLogger_basic_sample/assets/108038154/980571ba-fc0c-4e68-a3a2-f307cbc1c54d)
-* EventLogger 예시
+EventLogger 예시
 
 
 # EventLogger 튜토리얼 (Beckhoff Infosys)
