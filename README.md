@@ -1,3 +1,5 @@
+TwinCAT 4024.53 build
+
 # EventLogger basic sample
 [TwinCAT 3 EventLogger](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_eventlogger/index.html&id=8504177607767980219)
 
